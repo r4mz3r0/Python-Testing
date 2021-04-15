@@ -13,4 +13,7 @@ $ python3 -m venv ptc
 ```
 $source ptc/bin/activate
 ```
-5.
+5.  confirm virtual environment is running 
+```
+which python3 
+```
