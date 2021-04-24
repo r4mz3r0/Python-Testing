@@ -21,3 +21,35 @@ public class ZuneBug{
    
   }
 }
+
+  
+  
+  
+  
+  
+  
+package javaTestAutomation;
+import java.util.Scanner; 
+
+public class zuneBug {
+	int year = 1980; 
+	public static boolean isLeapYear(int year) {
+		return(false); 
+	}
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter year"); 
+		int year = input.nextInt(); 
+		input.close();
+		int days = 365; 
+		if(isLeapYear(year)) {
+			days = 366; 
+		}
+		while(days > 365) {
+			if(isLeapYear(year)) {
+				
+			}
+		}
+	}
+
+}
