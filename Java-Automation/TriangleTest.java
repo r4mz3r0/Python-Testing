@@ -30,7 +30,7 @@ class TriangleTest {
 	}
 	@Test
 	public void test_is_NOT_triangle_1() {
-		assertFalse(TriangleTest.isTriangle(12,13,5));
+		assertFalse(TriangleTest.isTriangle(5,7,13));
 	}
 	@Test
 	public void test_is_NOT_triangle_2() {
