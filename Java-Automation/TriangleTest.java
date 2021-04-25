@@ -9,24 +9,24 @@ class TriangleTest {
 
 	@Test
 	public void test_is_triangle_1() {
-		assertTrue(TriangleTest.isTriangle(3,4,5));
+		assertTrue(Triangle.isTriangle(3,4,5));
 	}
 	
 	@Test
 	public void test_is_triangle_2() {
-		assertTrue(TriangleTest.isTriangle(5,12,13));
+		assertTrue(Triangle.isTriangle(5,12,13));
 	}
 	@Test
 	public void test_is_triangle_3() {
-		assertTrue(TriangleTest.isTriangle(5,13,12));
+		assertTrue(Triangle.isTriangle(5,13,12));
 	}
 	@Test
 	public void test_is_triangle_4() {
-		assertTrue(TriangleTest.isTriangle(12,5,13));
+		assertTrue(Triangle.isTriangle(12,5,13));
 	}
 	@Test
 	public void test_is_triangle_5() {
-		assertTrue(TriangleTest.isTriangle(12,13,5));
+		assertTrue(Triangle.isTriangle(12,13,5));
 	}
 	@Test
 	public void test_is_NOT_triangle_1() {
@@ -34,27 +34,27 @@ class TriangleTest {
 	}
 	@Test
 	public void test_is_NOT_triangle_2() {
-		assertFalse(TriangleTest.isTriangle(5,13,7));
+		assertFalse(Triangle.isTriangle(5,13,7));
 	}
 	@Test
 	public void test_is_NOT_triangle_3() {
-		assertFalse(TriangleTest.isTriangle(13,5,7));
+		assertFalse(Triangle.isTriangle(13,5,7));
 	}
 	@Test
 	public void test_is_NOT_triangle_4() {
-		assertFalse(TriangleTest.isTriangle(13,7,5));
+		assertFalse(Triangle.isTriangle(13,7,5));
 	}
 	@Test
 	public void test_is_NOT_triangle_5() {
-		assertFalse(TriangleTest.isTriangle(13,7,5));
+		assertFalse(Triangle.isTriangle(13,7,5));
 	}
 	@Test
 	public void test_is_NOT_triangle_6() {
-		assertFalse(TriangleTest.isTriangle(5,9,3));
+		assertFalse(Triangle.isTriangle(5,9,3));
 	}
 	@Test
 	public void test_is_NOT_triangle_7() {
-		assertFalse(TriangleTest.isTriangle(1,2,-1));
+		assertFalse(Triangle.isTriangle(1,2,-1));
 	}
 	
 	@Test 
