@@ -1,7 +1,8 @@
 package javaTestAutomation;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+import java.io.*;
+import java.lang.*;
 import org.junit.jupiter.api.Test;
 
 class TriangleTest {
@@ -17,7 +18,7 @@ class TriangleTest {
 	}
 	@Test
 	public void test_is_triangle_3() {
-		assertTrueTriangleTest.isTriangle(5,13,12));
+		assertTrue(TriangleTest.isTriangle(5,13,12));
 	}
 	@Test
 	public void test_is_triangle_4() {
@@ -25,8 +26,51 @@ class TriangleTest {
 	}
 	@Test
 	public void test_is_triangle_5() {
-		assertTrue(TriangleTest.isTriangle(3,4,5));
+		assertTrue(TriangleTest.isTriangle(12,13,5));
+	}
+	@Test
+	public void test_is_NOT_triangle_1() {
+		assertFalse(TriangleTest.isTriangle(12,13,5));
+	}
+	@Test
+	public void test_is_NOT_triangle_2() {
+		assertFalse(TriangleTest.isTriangle(5,13,7));
+	}
+	@Test
+	public void test_is_NOT_triangle_3() {
+		assertFalse(TriangleTest.isTriangle(13,5,7));
+	}
+	@Test
+	public void test_is_NOT_triangle_4() {
+		assertFalse(TriangleTest.isTriangle(13,7,5));
+	}
+	@Test
+	public void test_is_NOT_triangle_5() {
+		assertFalse(TriangleTest.isTriangle(13,7,5));
+	}
+	@Test
+	public void test_is_NOT_triangle_6() {
+		assertFalse(TriangleTest.isTriangle(5,9,3));
+	}
+	@Test
+	public void test_is_NOT_triangle_7() {
+		assertFalse(TriangleTest.isTriangle(1,2,-1));
 	}
 	
+	@Test 
+	public void test_main_program_1() {
+		ByteArrayInputStream in = new ByteArrayInputStream("\5\n12\n13\n".getBytes());
+		System.setIn(in);
+		
+		ByteArrayOutputStream out = new ByteArrayOutputStream(); 
+		System.setOut(new PrintStream(out)); 
+		
+		String consoleOutput = "Enter side1: \n";
+		consoleOutput += "Enter side 2: \n"; 
+		consoleOutput += "Enter side 3: \n"; 
+		consoleOutput += "This is a Triangle. \n"; 
+		
+		assertEquals(consoleOutput, out.toString()) ;
+	} 
 
 }
