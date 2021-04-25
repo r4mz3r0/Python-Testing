@@ -21,18 +21,21 @@ public class Triangle {
 			System.out.println("This is a triangle.");
 		}
 		else {
-			System.out.println("THis is not a triangle.");
+			System.out.println("This is not a triangle.");
 		}
+		reader.close(); 
 		
 	}
 	// side1 + side2 < side3
 	// side1 + side3 > side2 
 	// side2 + side3 > side1
-	public static boolean isTriangle(int side_1, int side_2, int side_3) {
-		if(side_1 + side_2 <= side_3 || side_1 + side_3 <= side_2 || side_2 + side_3 > side_1) {
-			return(false);
-		}else {
+	public static boolean isTriangle(double a, double b, double c) {
+		if((a + b > c) &&
+		   (a + c > b) && 
+		   (b + c > a)) {
 			return(true);
+		}else {
+			return(false);
 		}
 		
 	}
