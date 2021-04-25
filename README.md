@@ -1,4 +1,4 @@
-# Python-Testing
+# Software-Testing-Automation
 ## Setting up a virtual environment on Linux 
 1. Installing virtualenv
 ```
@@ -17,3 +17,4 @@ $source ptc/bin/activate
 ```
 which python3 
 ```
+## Setting up Junit5 on eclipse 
